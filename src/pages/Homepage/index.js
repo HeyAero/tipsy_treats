@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.png';
-import { SearchBar } from '../../components'
+import { SearchBar, FactBox } from '../../components'
 
 const Homepage = () => {
   return (
@@ -10,6 +10,7 @@ const Homepage = () => {
         <span className="search-by">SEARCH BY:</span>
       </div>
       <SearchBar/>
+      <FactBox />
     </main>
   );
 }
