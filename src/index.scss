@@ -1,8 +1,10 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import './pages/Homepage/homepage';
+@import './components/SearchBar/searchbar';
 
 $background-blue: #0e121d;
 
 body {
   background-color: $background-blue;
+  font-family: Georgia,Times,Times New Roman,serif; 
 }
