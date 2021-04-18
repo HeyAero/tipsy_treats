@@ -1,0 +1,26 @@
+$tipsy-pink: #be5574;
+
+.drink {
+  color: $tipsy-pink;
+
+  img {
+    width: 100%;
+  }
+}
+
+.drink-border-left {
+  border: 5px solid $tipsy-pink;
+}
+
+.drink-border-right {
+  border-top: 5px solid $tipsy-pink;
+  border-right: 5px solid $tipsy-pink;
+  border-bottom: 5px solid $tipsy-pink;
+
+  @media screen and (max-width: 768px) {
+    border-top: 0;
+    border-left: 5px solid $tipsy-pink;
+    border-bottom: 5px solid $tipsy-pink;
+    border-right: 5px solid $tipsy-pink;
+  }
+}

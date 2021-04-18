@@ -1,0 +1,24 @@
+$tipsy-pink: #be5574;
+$background-blue: #0e121d;
+
+.fact-box {
+  background-color: #0e121d;
+  width: 50%;
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+  color: $tipsy-pink;
+  border-left: 5px solid $tipsy-pink;
+  border-top: 5px solid $tipsy-pink;
+  border-right: 5px solid $tipsy-pink;
+  padding: 5px 125px;
+
+  text-align: center;
+
+  h5 {
+    position: relative;
+    top: -20px;
+    background-color: $background-blue;
+    margin: 0px 100px;
+  }
+}
