@@ -1,9 +1,11 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import './pages/Homepage/homepage';
 @import './pages/Search/search';
+@import './pages/Drink/drink';
 @import './components/SearchBar/searchbar';
 @import './components/FactBox/factbox';
 @import './components/Results/results';
+@import './components/DrinkBox/drinkbox';
 
 $background-blue: #0e121d;
 

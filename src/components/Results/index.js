@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-
 const Results = ({results}) => {
   console.log(results);
   return (
-    <>
+    <div className="">
       { results ?
         results.drinks.map(result => (
           <div key={result.idDrink} className="result-box">
@@ -15,9 +13,9 @@ const Results = ({results}) => {
           </div>
         ))
 
-        : <h1>Test</h1>
+        : <div></div>
       }
-    </>
+    </div>
   );
 }
 

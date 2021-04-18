@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { Homepage, Search } from './pages';
+import { Homepage, Search, Drink } from './pages';
 // import { Header, Footer } from './layout';
 
 function App() {
@@ -13,6 +13,9 @@ function App() {
         </Route>
         <Route path="/search">
           <Search />
+        </Route>
+        <Route path="/drink">
+          <Drink />
         </Route>
       </Switch>
     </>
