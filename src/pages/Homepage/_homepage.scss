@@ -8,14 +8,16 @@ $tipsy-pink: #be5574;
   width: 350px;
 }
 
-.search-by {
-  margin-top: 25px;
+.main-button {
+  display: block;
+  width: 300px;
   color: $tipsy-pink;
-  width: 25%;
-  text-align: center;
+  border: 5px solid $tipsy-pink;
+  padding: 10px;
+  font-size: 1.5rem;
+}
 
-  span {
-    font-style: italic;
-    font-weight: 600;
-  }
+.main-button:hover {
+  color: #ff719c;
+  text-decoration: none;
 }
