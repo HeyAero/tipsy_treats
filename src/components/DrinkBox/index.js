@@ -12,35 +12,22 @@ const DrinkBox = () => {
   useEffect(() => {
     const fetchDrink = async () => {
       try {
-        let { data } = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${params.id}`);
-        console.log(data.drinks[0]);
-        setDrink(data.drinks[0]);
+        if (params.id != "random") {
+          let { data } = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${params.id}`);
+          console.log(data.drinks[0]);
+          setDrink(data.drinks[0]);
+        } else {
+          let { data } = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/random.php`);
+          console.log(data.drinks[0]);
+          setDrink(data.drinks[0]);
+        }
       } catch (err) {
         console.warn(err);
       }
     }
     fetchDrink();
   }, [params])
-
-  const fetchIngredients = () => {
-    if (drink) {
-      let ingList = {};
-      for (let i=0; i < 16; i++) {
-        if (drink.strIngredient)
-        return (
-          <>
-            <ul>
-              
-            </ul>
-          </>
-        );
-      }
-      
-    } else {
-      return "No ingredients";
-    }
-  }
-
+  
   return (
     <section className="container drink mt-5">
       { drink ? 
