@@ -9,7 +9,7 @@ const Results = ({results}) => {
             <h2>{result.strDrink}</h2>
             <img src={result.strDrinkThumb} alt={result.strDrink}></img>
             <hr/>
-            <a href="#">VIEW</a>
+            <a href={`/drink/${result.idDrink}`}>VIEW</a>
           </div>
         ))
 
